@@ -81,12 +81,12 @@ def main():
             keyTest = matrix_with_key(keyWord, cipher_text)
             resultString = decryption(cipher_text, keyTest, matrix)
             for word in dictionary:
-                uslovie = (word in resultString)
-                if uslovie:
+                requirement = (word in resultString)
+                if requirement:
                     count = count + 1
                 if count > 0:
-                    print(f'Зашифрованный текст: {cipher_text}\n')
-                    print('Расшифрованный текст: ', resultString)
+                    print(f'Encrypted text : {cipher_text}\n')
+                    print('Decryt: ', resultString)
                     return resultString
 
 main()
